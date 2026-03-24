@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云计算实验报告：利用云平台搭建个人博客</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', '宋体', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            color: #333;
+        }
+        .report-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 20px;
+        }
+        .header-info {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        .conclusion {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h1>云计算技术实验报告</h1>
+        <h2>利用云平台搭建个人博客</h2>
+
+        <h2>一、实验目的</h2>
+        <p>本实验旨在通过实践操作，掌握基于云计算环境的网站部署技能。具体包括：</p>
+        <ul>
+            <li>熟悉 GitHub Pages 云平台的基本使用方法</li>
+            <li>掌握静态网站的开发和部署流程</li>
+            <li>实现个人博客的搭建和内容发布</li>
+            <li>将实验报告以博文形式发布在个人博客上</li>
+        </ul>
+
+        <h2>二、实验环境</h2>
+        <h3>硬件环境</h3>
+        <ul>
+            <li>联网的计算机一台（处理器：Intel Core i5，内存：8GB）</li>
+        </ul>
+        <h3>软件环境</h3>
+        <ul>
+            <li>操作系统：Windows 11</li>
+            <li>浏览器：Chrome / Edge</li>
+            <li>版本控制：Git</li>
+            <li>云平台：GitHub Pages</li>
+        </ul>
+
+        <h2>三、实验步骤</h2>
+        
+        <h3>1. 创建 GitHub 仓库</h3>
+        <p>登录 GitHub 账号，创建新仓库，仓库名称为 <code>[用户名].github.io</code>，设置为 Public 可见性。</p>
+        
+        <h3>2. 开发博客首页</h3>
+        <p>创建 <code>index.html</code> 作为博客首页，包含博客标题、导航栏、文章列表等基本元素。</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;我的个人博客&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;欢迎来到我的博客&lt;/h1&gt;
+    &lt;p&gt;这是我利用GitHub Pages搭建的个人博客。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>3. 创建实验报告博文</h3>
+        <p>创建 <code>posts/实验报告.html</code> 文件，将本实验报告内容作为一篇博文发布。</p>
+        
+        <h3>4. 部署到 GitHub Pages</h3>
+        <p>提交代码到 GitHub 仓库，并在 Settings → Pages 中配置部署分支为 main。</p>
+        <pre><code># 提交代码
+git add .
+git commit -m "发布个人博客"
+git push origin main</code></pre>
+        
+        <h3>5. 验证部署结果</h3>
+        <p>等待 1-3 分钟后，访问 <code>https://[用户名].github.io</code> 查看博客。</p>
+      
+        
+        <h3>博客访问地址</h3>
+        <p><strong>博客链接：</strong> <code>https://[你的用户名].github.io</code></p>
+        <p><strong>实验报告博文链接：</strong> <code>https://[你的用户名].github.io/posts/实验报告.html</code></p>
+
+        <h2>五、结论分析与体会</h2>
+        
+        <h3>5.1 实验结论</h3>
+        <p>通过本次实验，成功完成了以下目标：</p>
+        <ul>
+            <li>在 GitHub 云平台上成功搭建个人博客网站</li>
+            <li>掌握了 GitHub Pages 静态网站托管服务的使用方法</li>
+            <li>实现了个人博客的部署、访问和内容更新</li>
+            <li>将实验报告以博文形式发布在个人博客上</li>
+        </ul>
+        
+        <h3>5.2 GitHub Pages 云平台的优势</h3>
+        <ul>
+            <li><strong>免费：</strong>无需购买服务器和域名，零成本搭建个人网站</li>
+            <li><strong>简单：</strong>只需创建仓库、上传文件即可完成部署</li>
+            <li><strong>版本控制：</strong>基于 Git 管理，所有修改都有记录</li>
+            <li><strong>自动部署：</strong>代码推送后自动触发部署，无需手动操作</li>
+            <li><strong>稳定可靠：</strong>依托 GitHub 全球 CDN 网络，访问速度快</li>
+        </ul>
+        
+        <h3>5.3 遇到的问题及解决方法</h3>
+        <table>
+            <tr>
+                <th>问题</th>
+                <th>解决方法</th>
+            </tr>
+            <tr>
+                <td>部署后页面无法访问</td>
+                <td>检查仓库名称是否为 <code>用户名.github.io</code> 格式</td>
+            </tr>
+            <tr>
+                <td>修改后页面未更新</td>
+                <td>等待 1-3 分钟部署完成，按 Ctrl+F5 强制刷新</td>
+            </tr>
+            <tr>
+                <td>页面显示乱码</td>
+                <td>添加 <code>&lt;meta charset="UTF-8"&gt;</code> 标签</td>
+            </tr>
+        </table>
+        
+        <h3>5.4 实验体会</h3>
+        <div class="conclusion">
+            <p>通过本次实验，我深刻体会到了云计算技术带来的便利。GitHub Pages 作为云平台服务，让我无需关心服务器配置、环境搭建等复杂问题，只需要专注于内容创作本身。这种"拿来即用"的云服务模式，大大降低了网站部署的门槛。</p>
+            <p>同时，我也理解了静态网站托管的基本原理，掌握了 Git 版本控制工具的基本使用。这些技能不仅适用于本次实验，在未来的学习和工作中也会有广泛应用。</p>
+            <p>云计算技术的核心价值在于将基础设施抽象化、服务化，让开发者能够更专注于业务逻辑。本次实验很好地体现了这一理念。</p>
+        </div>
+        
+        <h3>5.5 未来展望</h3>
+        <p>本次实验为我打开了云计算应用的大门，后续可以进一步探索：</p>
+        <ul>
+            <li>使用 Hexo、Jekyll 等静态博客框架，提升博客管理效率</li>
+            <li>购买自定义域名，绑定到 GitHub Pages</li>
+            <li>学习其他云平台（如阿里云、腾讯云）的动态网站部署</li>
+            <li>探索云数据库、云存储等更多云服务</li>
+        </ul>
+        
+        <footer>
+            <p>报告完成日期：2026年3月24日</p>
+            <p>© 2026 [你的姓名] | 云计算技术实验报告</p>
+        </footer>
+    </div>
+</body>
+</html>
